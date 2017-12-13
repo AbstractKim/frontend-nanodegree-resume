@@ -15,4 +15,8 @@ var funThought = awesomeThought.replace("awesome", "fun");
 
 var name = "Peter Beomseok Kim";
 var formattedName = HTMLheaderName.replace("%data%", name);
+var role = "Software Developer";
+var formattedRole = HTMLheaderRole.replace("%data%", role);
+
 $("#header").append(formattedName);
+$("#header").append(formattedRole);
