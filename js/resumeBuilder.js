@@ -22,8 +22,6 @@ $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 */
 
-var s = "audacity";
-var mapper = function(s){
-	return "U" + s.slice(2);
-}
-console.log(mapper(s));
+var skills =
+["awesomeness", "programming", "teaching", "JS"];
+console.log(skills.length);
