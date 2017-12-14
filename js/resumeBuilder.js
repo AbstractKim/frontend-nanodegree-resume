@@ -2,7 +2,7 @@
 This is empty on purpose! Your code to build the resume will go here.
  */
 
-
+/*
  var email = "peter@udacity.com"
  var newEmail = email.replace("udacity", "gmail");
  console.log(email);
@@ -20,3 +20,10 @@ var formattedRole = HTMLheaderRole.replace("%data%", role);
 
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
+*/
+
+var s = "audacity";
+var mapper = function(s){
+	return "U" + s.slice(2);
+}
+console.log(mapper(s));
