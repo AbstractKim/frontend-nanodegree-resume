@@ -22,6 +22,20 @@ $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 */
 
+/*
 var skills =
 ["awesomeness", "programming", "teaching", "JS"];
 console.log(skills.length);
+*/
+
+var sampleArray = [0,0,7];
+
+var incrementLastArrayElement = function(_array){
+	var newArray = [];
+	for(let i=0; i < _array.length; i++){
+		newArray.push(_array[i]);
+	}
+	return newArray;
+}
+
+console.log(incrementLastArrayElement(sampleArray));
