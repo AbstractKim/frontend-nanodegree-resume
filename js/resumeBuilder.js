@@ -44,21 +44,12 @@ console.log(incrementLastArrayElement(sampleArray));
 var name = "AlbErt EINstEiN";
 
 function nameChanger(oldName){
-	//1.make lowercase
-	lowerCaseName = oldName.toLowerCase();
-	//2. split by " " to first name and last name
-	nameArray = lowerCaseName.split(" ");
-	var firstName = nameArray[0];
-	var lastName;
-	if(nameArray.length == 2){
-		lastName = nameArray[1];
-	}
-	//3. first char of first name changes to capital
-	//4. lastName changes to Upper Case
-	finalName = firstName.slice(0,1).toUpperCase() + firstName.slice(1) + " ";
-	if(lastName)
-		finalName = finalName + lastName.toUpperCase();
-
+	
+	var finalName = oldName;
+	var names = oldName.split(" ");
+	names[1] = names[1].toUpperCase();
+	names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
+	finalName = names.join(" ");
 	return finalName;
 };
 
